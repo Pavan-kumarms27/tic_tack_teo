@@ -1,0 +1,61 @@
+h1{
+    color: red;
+    text-transform: uppercase;
+    font-family:cursive;
+}
+
+#container{
+    height: 340px;
+    width: 340px;
+    /* background: #000; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    align-content: space-around;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    border-radius: 15%;
+    /* transition: transform 0.2s ease; */
+    background-color: rgb(157, 255, 0);
+    color: rgb(0, 0, 0);
+    transition: box-shadow ease 0.5s;
+    font-size: 5em;
+    font-family:'Franklin Gothic Medium';
+}
+
+.box:active {
+  transform: scale(0.88);
+}
+
+.box:hover{
+    box-shadow: 1px 1px 30px rgb(255, 255, 255);
+}
+
+.ctl_btn{
+    height: 50px;
+    width: 100px;
+    font-size: 2em;
+    transition: box-shadow ease 0.5s;
+    border-radius: 25px;
+}
+
+.ctl_btn:active {
+  transform: scale(0.88);
+  background-color: gold;
+}
+
+.ctl_btn:hover{
+    box-shadow: 1px 1px 30px rgb(255, 255, 255);
+}
+
+#new_game{
+    width: 200px;
+    /* display: none; */
+
+}
