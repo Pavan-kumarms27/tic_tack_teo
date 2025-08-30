@@ -32,12 +32,25 @@ document.querySelectorAll(".box").forEach((element) => {
           let announcement = document.getElementById("announcement");
           let msg = document.createElement("h2");
           msg.innerText = " winner is " + val1;
+//------styling of msg--------------------------------------------------------------------------------------          
+          msg.style.color = "blue";
+          msg.style.fontStyle="bold";
+          msg.style.textTransform="uppercase"
+          msg.style.fontFamily="Helvetica";
+
+          let acc= document.createElement("h2");
+          acc.innerText = "click on reset to continue the game" ;
+//------styling of acc--------------------------------------------------------------------------------------           
+          acc.style.color = "red";
+          acc.style.fontStyle="bold";
+          acc.style.textTransform="uppercase"
+          
           announcement.appendChild(msg);
+          announcement.appendChild(acc);
           for (let bn of box) {
             bn.disabled = true;
-           
           }
-           msg.style.color = "blue";
+           
         }
       }
     }
